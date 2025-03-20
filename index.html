@@ -1,5 +1,154 @@
+<!DOCTYPE html>
+<style>
+.header{
+    position:relative;
+    top:-13px;
+    left:-10px;
+    height:70px;
+    width:calc(100% + 18px);
+    background: linear-gradient(to bottom, #FF2525, #FFFFFF, #457645); /* Red, White, Green */
+    font-size: 35px;
+    color:black;
+}
+
+.header p{
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 30%;
+}
+
+.footer{
+    position:absolute;
+    bottom:0px;
+    left:-10px;
+    height:120px;
+    width:calc(100% + 10px);
+    background-color: #457645;
+    font-size: auto;
+    color:#e0e0e0;
+    font-family:"Comic Sans MS";
+    display: inline-block;
+}
+
+.footer p{
+    position:relative;
+    margin-top: 15px;
+    margin-left:5%;
+    text-align: left;
+    width: 70%
+}
+
+.GameBoxes {
+    position:absolute;
+    height: calc(90% - 200px);
+    width:84%;
+    left:8%;
+    margin-top:20px;
+
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.GameBox {
+    display: inline-block;
+    margin: 6% 8%;
+    height: 90%;
+    background: linear-gradient(to bottom right, #FF2525, #eeeeee, #457645); /* Red, White, Green */
+    border-radius: 30px;
+}
+
+.GameBoxInner {
+    margin: 8px 8px;
+    height:calc(100% - 16px);
+    background-color: #eeeeee;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+
+    font-family: "Comic Sans MS";
+}
+
+.GameBoxInner h1{
+    margin: 0px 0px;
+    padding-top: 5px;
+    font-size: 25px
+}
+
+.GameBoxInner p{
+    margin: 5px 5px;
+    font-size: 15px
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+</style>
+
 <html>
-    <body>
-        <h1> This is a website. </h1>
+    <body style="background-color: #f5f5f5;">
+        <div class="header"><p><b>Magyar Meme</b></p>
+        </div>
+
+        
+        <div class="GameBoxes">
+            <div class="GameBox">
+                <a href=".\MagyarMemeANap.html">
+                    <div class="GameBoxInner">
+                        <h1>Magyar Meme A Nap</h1>
+                        <p> <BR> Hungarian Meme of the Day 
+                            <br>
+                            <br> Practice by translating your daily Hungarian meme!</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="GameBox">
+                <a>
+                    <div class="GameBoxInner">
+                        <h1>Magyardle</h1>
+                        <p> <BR> Coming Soon ...
+                            <br> 
+                            <br> Practice and learn vocab by playing Wordle in Hungarian!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="GameBox">
+                <a href="https://github.com/JamieBali/MagyarMeme/issues">
+                    <div class="GameBoxInner">
+                        <h1>Hamarosan Több</h1>
+                        <p> <BR> More Games Coming Soon!
+                            <br>
+                            <br> Click here to submit suggestions for future games!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="GameBox">
+                <a href="https://github.com/JamieBali/MagyarMeme/issues">
+                    <div class="GameBoxInner">
+                        <h1>Hamarosan Több</h1>
+                        <p> <BR> More Games Coming Soon!
+                            <br>
+                            <br> Click here to submit suggestions for future games!</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>       
+
+
+
+
+
+        <div class="footer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Coat_of_arms_of_Hungary.svg/120px-Coat_of_arms_of_Hungary.svg.png" style="height: 100px; position: absolute; right: 10px; margin-top: 10px">
+            <p>Website Created by Jamie Bali. Source code and more on <a href="https://Github.com/JamieBali" style="color: blue">my Github page.</a> <br>
+            This website is hosted on AWS and is maintaned and operated non-profit.</p>
+        </div>
     </body>
 </html>

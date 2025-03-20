@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<style>
+.header{
+    position:relative;
+    top:-13px;
+    left:-10px;
+    height:70px;
+    width:calc(100% + 18px);
+    background: linear-gradient(to bottom, #FF2525, #FFFFFF, #457645); /* Red, White, Green */
+    font-size: 45px;
+    color:black;
+}
+
+.header p{
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 30%;
+}
+
+.footer{
+    position:absolute;
+    bottom:0px;
+    left:-10px;
+    height:120px;
+    width:calc(100% + 10px);
+    background-color: #457645;
+    font-size: auto;
+    color:#e0e0e0;
+    font-family:"Comic Sans MS";
+    display: inline-block;
+}
+
+.footer p{
+    position:relative;
+    margin-top: 15px;
+    margin-left:5%;
+    text-align: left;
+    width: 70%
+}
+
+.GameBox {
+    position: absolute;
+    margin-left: calc(5% - 8px);
+    height: calc(90% - 200px);
+    width: 90%;
+    background: linear-gradient(to bottom right, #FF2525, #eeeeee, #457645); /* Red, White, Green */
+    border-radius: 30px;
+}
+
+.GameBoxInner {
+    margin: 8px 8px;
+    height:calc(100% - 16px);
+    background-color: #eeeeee;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+
+    font-family: "Comic Sans MS";
+}
+
+.GameBoxInner h1{
+    margin: 0px 0px;
+    font-size: 25px
+}
+
+.GameBoxInner p{
+    margin: 5px 5px;
+    font-size: 15px
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.memebox{
+    margin: 10px;
+}
+
+.textBar{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+
+    display: grid;
+}
+
+.textBar{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+
+}
+
+
+.textBrick{
+    display: inline-block;
+    left: 5%;
+    width: auto;
+    height: 50px;
+    font-size: 25px;
+}
+
+.textBrick .toolTipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.textBrick:hover .toolTipText {
+    visibility: visible;
+}
+
+
+</style>
+
+<script src=".\MagyarMeme.js"></script>
+
+<html>
+    <body onload="displayMeme()" style="background-color: #f5f5f5;">
+        <div class="header"><p><b>Magyar Meme</b></p>
+            <a href=".\index.html" style="height:70px; width: 28%; position: absolute; text-align: center; padding-top: 8px; font-size: 30px; font-family: 'Comic Sans MS';">
+                Go Back
+            </a>
+        </div>
+
+        <div class="GameBox">
+            <div class="GameBoxInner">
+                <img class="memebox">
+                <div class="textBar"></div>
+                <div class="buttonZone"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Coat_of_arms_of_Hungary.svg/120px-Coat_of_arms_of_Hungary.svg.png" style="height: 100px; position: absolute; right: 10px; margin-top: 10px">
+            <p>Website Created by Jamie Bali. Source code and more on <a href="https://Github.com/JamieBali" style="color:blue">my Github page.</a> <br>
+            This website is hosted on AWS and is maintaned and operated non-profit.</p>
+        </div>
+    </body>
+</html>
+

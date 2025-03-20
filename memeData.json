@@ -1,0 +1,14 @@
+{
+    "2025-03-19":{
+        "ImageFile":"test.png",
+        "HungarianText":"wow|test|yep",
+        "DirectTranslation":"yay|words|here",
+        "ActualTranslation":"Yes|words|do infact|go here"
+    },
+    "2025-03-20":{
+        "ImageFile":"test.png",
+        "HungarianText":"wow|test|yep",
+        "DirectTranslation":"yay|words|here",
+        "ActualTranslation":"Yes|words|do infact|go here"
+    }
+}
